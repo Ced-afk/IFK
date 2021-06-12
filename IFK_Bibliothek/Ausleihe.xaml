@@ -1,0 +1,22 @@
+﻿<Window x:Class="IFK_Bibliothek.Ausleihe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IFK_Bibliothek"
+        mc:Ignorable="d"
+        Title="Ausleihe" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <Button Width="80" Height="33" Content="Ausleihe" Background="AliceBlue" FontSize="13" BorderBrush="Black" BorderThickness="1" Margin="634,238,78,148" x:Name="CdbAusleihen" Click="CdbAusleihen_Click" />
+        <Button Width="80" Height="33" Content="Zurück" Background="AliceBlue" FontSize="13" BorderBrush="Black" BorderThickness="1" Margin="634,271,78,115" x:Name="CdbZurück" Click="CdbZurück_Click"/>
+        <Label BorderBrush="Black" BorderThickness="1" Background="AliceBlue"  Margin="54,16,619,368" Content="Buchausleihe" FontSize="18"/>
+        <DataGrid x:Name="pog" HorizontalAlignment="Left" Height="120" Margin="54,51,0,0" VerticalAlignment="Top" Width="310"/>
+        <StackPanel Width="100" Height="135" Margin="492,42,200,137" Background="AliceBlue">
+            <Label Height="25" FontSize="13" Content="Ausleihe" Background="DarkGray"/>
+            <TextBox Width="100" Height="40" x:Name="Signatur"/>
+            <TextBox Width="100" Height="40" x:Name="Ausleiher"/>
+            <DatePicker Height="30" x:Name="LeihDatum"/>
+        </StackPanel>
+        <Ellipse HorizontalAlignment="Left" Height="39" Margin="728,13,0,0" VerticalAlignment="Top" Width="43" Fill="Black"/>
+    </Grid>
+</Window>
